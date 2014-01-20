@@ -7,9 +7,9 @@
 //
 
 #import "DKViewController.h"
+#import "DKTaskViewController.h"
 
 @interface DKViewController ()
-
 @end
 
 @implementation DKViewController
@@ -17,13 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if ([segue.identifier isEqualToString:@"pushToList"]) {
+        DKTaskViewController* listVC = segue.destinationViewController;
+        listVC.colorID = 0;
+    }
 }
 
 @end

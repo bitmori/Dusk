@@ -21,6 +21,13 @@
 		4A40108918891580005C3303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A40106B18891580005C3303 /* UIKit.framework */; };
 		4A40109118891580005C3303 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A40108F18891580005C3303 /* InfoPlist.strings */; };
 		4A40109318891580005C3303 /* DuskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40109218891580005C3303 /* DuskTests.m */; };
+		4A4010A41889ED2A005C3303 /* DKTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4010A31889ED2A005C3303 /* DKTaskViewController.m */; };
+		4A4010B0188B0597005C3303 /* DKSwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4010AF188B0597005C3303 /* DKSwipeCell.m */; };
+		4A4010B3188B24E0005C3303 /* DKDataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4010B2188B24E0005C3303 /* DKDataSingleton.m */; };
+		4A4010B6188B6070005C3303 /* DKStyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4010B5188B6070005C3303 /* DKStyleLabel.m */; };
+		4A4010BC188BA627005C3303 /* UIView+DKSubViewHunting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4010BB188BA627005C3303 /* UIView+DKSubViewHunting.m */; };
+		4A4010C7188C70DC005C3303 /* RFTapEditLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4010C6188C70DC005C3303 /* RFTapEditLabel.m */; };
+		4A4010CA188C737A005C3303 /* DKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4010C9188C737A005C3303 /* DKDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,20 @@
 		4A40108E18891580005C3303 /* DuskTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DuskTests-Info.plist"; sourceTree = "<group>"; };
 		4A40109018891580005C3303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A40109218891580005C3303 /* DuskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuskTests.m; sourceTree = "<group>"; };
+		4A4010A21889ED2A005C3303 /* DKTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTaskViewController.h; sourceTree = "<group>"; };
+		4A4010A31889ED2A005C3303 /* DKTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTaskViewController.m; sourceTree = "<group>"; };
+		4A4010AE188B0597005C3303 /* DKSwipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKSwipeCell.h; sourceTree = "<group>"; };
+		4A4010AF188B0597005C3303 /* DKSwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKSwipeCell.m; sourceTree = "<group>"; };
+		4A4010B1188B24E0005C3303 /* DKDataSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDataSingleton.h; sourceTree = "<group>"; };
+		4A4010B2188B24E0005C3303 /* DKDataSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDataSingleton.m; sourceTree = "<group>"; };
+		4A4010B4188B6070005C3303 /* DKStyleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKStyleLabel.h; sourceTree = "<group>"; };
+		4A4010B5188B6070005C3303 /* DKStyleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKStyleLabel.m; sourceTree = "<group>"; };
+		4A4010BA188BA627005C3303 /* UIView+DKSubViewHunting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DKSubViewHunting.h"; sourceTree = "<group>"; };
+		4A4010BB188BA627005C3303 /* UIView+DKSubViewHunting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DKSubViewHunting.m"; sourceTree = "<group>"; };
+		4A4010C5188C70DC005C3303 /* RFTapEditLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFTapEditLabel.h; path = "../../../Downloads/RFTapEditLabel-master/RFTapEditLabel/RFTapEditLabel.h"; sourceTree = "<group>"; };
+		4A4010C6188C70DC005C3303 /* RFTapEditLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFTapEditLabel.m; path = "../../../Downloads/RFTapEditLabel-master/RFTapEditLabel/RFTapEditLabel.m"; sourceTree = "<group>"; };
+		4A4010C8188C737A005C3303 /* DKDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDetailViewController.h; sourceTree = "<group>"; };
+		4A4010C9188C737A005C3303 /* DKDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +133,13 @@
 		4A40106D18891580005C3303 /* Dusk */ = {
 			isa = PBXGroup;
 			children = (
+				4A4010B9188B683E005C3303 /* Data */,
+				4A4010B8188B682F005C3303 /* ViewControllers */,
+				4A4010B7188B6817005C3303 /* CustomView */,
 				4A40107618891580005C3303 /* DKAppDelegate.h */,
 				4A40107718891580005C3303 /* DKAppDelegate.m */,
-				4A40107918891580005C3303 /* Main.storyboard */,
-				4A40107C18891580005C3303 /* DKViewController.h */,
-				4A40107D18891580005C3303 /* DKViewController.m */,
 				4A40107F18891580005C3303 /* Images.xcassets */,
+				4A40107918891580005C3303 /* Main.storyboard */,
 				4A40106E18891580005C3303 /* Supporting Files */,
 			);
 			path = Dusk;
@@ -150,6 +172,43 @@
 				4A40108F18891580005C3303 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A4010B7188B6817005C3303 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				4A4010C5188C70DC005C3303 /* RFTapEditLabel.h */,
+				4A4010C6188C70DC005C3303 /* RFTapEditLabel.m */,
+				4A4010B4188B6070005C3303 /* DKStyleLabel.h */,
+				4A4010B5188B6070005C3303 /* DKStyleLabel.m */,
+				4A4010AE188B0597005C3303 /* DKSwipeCell.h */,
+				4A4010AF188B0597005C3303 /* DKSwipeCell.m */,
+				4A4010BA188BA627005C3303 /* UIView+DKSubViewHunting.h */,
+				4A4010BB188BA627005C3303 /* UIView+DKSubViewHunting.m */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		4A4010B8188B682F005C3303 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A40107C18891580005C3303 /* DKViewController.h */,
+				4A40107D18891580005C3303 /* DKViewController.m */,
+				4A4010A21889ED2A005C3303 /* DKTaskViewController.h */,
+				4A4010A31889ED2A005C3303 /* DKTaskViewController.m */,
+				4A4010C8188C737A005C3303 /* DKDetailViewController.h */,
+				4A4010C9188C737A005C3303 /* DKDetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4A4010B9188B683E005C3303 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4A4010B1188B24E0005C3303 /* DKDataSingleton.h */,
+				4A4010B2188B24E0005C3303 /* DKDataSingleton.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +309,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4010B3188B24E0005C3303 /* DKDataSingleton.m in Sources */,
+				4A4010BC188BA627005C3303 /* UIView+DKSubViewHunting.m in Sources */,
+				4A4010CA188C737A005C3303 /* DKDetailViewController.m in Sources */,
 				4A40107418891580005C3303 /* main.m in Sources */,
+				4A4010C7188C70DC005C3303 /* RFTapEditLabel.m in Sources */,
 				4A40107E18891580005C3303 /* DKViewController.m in Sources */,
+				4A4010A41889ED2A005C3303 /* DKTaskViewController.m in Sources */,
 				4A40107818891580005C3303 /* DKAppDelegate.m in Sources */,
+				4A4010B0188B0597005C3303 /* DKSwipeCell.m in Sources */,
+				4A4010B6188B6070005C3303 /* DKStyleLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +527,7 @@
 				4A40109818891580005C3303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A40109918891580005C3303 /* Build configuration list for PBXNativeTarget "DuskTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +536,7 @@
 				4A40109B18891580005C3303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
