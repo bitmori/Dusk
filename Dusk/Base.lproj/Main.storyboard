@@ -72,6 +72,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8cy-Vh-YSN" kind="push" id="uxR-GU-rVl"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fol-sc-Gpv">
                                 <rect key="frame" x="251" y="185" width="51" height="31"/>
@@ -160,7 +163,7 @@
                                     <outlet property="contentLabel" destination="O3A-ws-90S" id="EGf-eE-YHZ"/>
                                     <outlet property="foregroundView" destination="WnS-98-hj1" id="4IJ-yP-fZ5"/>
                                     <outlet property="tokenView" destination="xmW-rB-UlD" id="fWD-kX-Zmp"/>
-                                    <segue destination="uyH-5c-NhF" kind="push" id="0R2-Be-B0D"/>
+                                    <segue destination="uyH-5c-NhF" kind="push" identifier="editTask" id="0R2-Be-B0D"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -170,9 +173,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="vwu-id-7PO">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="6Y4-y2-TbA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="awo-jM-w5a">
                             <connections>
-                                <action selector="add:" destination="IW0-Fc-U2Q" id="jgE-ym-0bA"/>
+                                <segue destination="uyH-5c-NhF" kind="push" identifier="addTask" id="FBc-IE-7yn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -180,6 +183,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zx8-C9-S2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1166" y="75"/>
+        </scene>
+        <!--Time Picker View Controller-->
+        <scene sceneID="dmv-DT-zHQ">
+            <objects>
+                <viewController id="8cy-Vh-YSN" customClass="DKTimePickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WsG-5a-5ve"/>
+                        <viewControllerLayoutGuide type="bottom" id="KZ4-Ov-l1m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZMV-mB-JOe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heR-YR-QSM">
+                                <rect key="frame" x="20" y="100" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sl8-yw-6sQ"/>
+                    <connections>
+                        <outlet property="labelTime" destination="heR-YR-QSM" id="QTg-RC-oVy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gR-AW-D6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="V2k-Ct-C87">
@@ -209,4 +242,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="0R2-Be-B0D"/>
+    </inferredMetricsTieBreakers>
 </document>

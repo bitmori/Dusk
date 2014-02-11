@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Task.h"
 
 @interface DKDetailViewController : UIViewController
+
+@property (strong, nonatomic) Task* task;
+@property (assign, nonatomic, getter = isEditing) BOOL editing;
 
 @end

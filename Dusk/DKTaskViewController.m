@@ -10,10 +10,11 @@
 #import "DKSwipeCell.h"
 #import "DKDataSingleton.h"
 #import "UIView+DKSubViewHunting.h"
+#import "Task.h"
 
 @interface DKTaskViewController () <DKSwipeCellDelegate>
 
-@property (strong, nonatomic) NSMutableArray* data;
+
 @property (strong, nonatomic) UIColor* color;
 - (IBAction)add:(id)sender;
 
@@ -30,11 +31,18 @@
     return self;
 }
 
+- (void)fetchData
+{
+    self.data = [NSMutableArray arrayWithArray:[Task findAll]];
+    //[Task findAllSortedBy:@"date" ascending:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.data = [NSMutableArray arrayWithArray:@[@"Chris", @"Leon", @"Ada", @"Sherry"]];
+    [self fetchData];
+    //self.data = [NSMutableArray arrayWithArray:@[@"Chris", @"Leon", @"Ada", @"Sherry"]];
     
     DKDataSingleton* sharedData = [DKDataSingleton sharedData];
     self.color = sharedData.colorList[self.colorID];
@@ -76,7 +84,8 @@
         cell = [[DKSwipeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 
-    [cell setContent:self.data[indexPath.row]];
+    Task* task = self.data[indexPath.row];
+    [cell setContent:task.title];
     [cell setColor:self.color];
     [cell setStrikeLine:YES];
     [cell setReorderControlGrip];
@@ -153,7 +162,7 @@
  */
 
 - (IBAction)add:(id)sender {
-    [self setEditing:!self.isEditing];
+    
 }
 
 - (BOOL)isEditingStatus

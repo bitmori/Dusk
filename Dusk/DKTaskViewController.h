@@ -11,5 +11,6 @@
 @interface DKTaskViewController : UITableViewController
 
 @property (assign, nonatomic) NSUInteger colorID;
+@property (strong, nonatomic) NSMutableArray* data;
 
 @end
